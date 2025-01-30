@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="inFinnish" lang="fi">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./styles.css">
 	<title>Ylikellotus</title>
+	<style>
+		body [lang=fi],
+		body [lang=en] {
+			display: none;
+		}
+		.inFinnish [lang=fi] {
+			display: inline;
+		}
+		.inEnglish [lang=en] {
+			display: inline;
+		}
+	</style>
 </head>
 
 <body class="overflow-x-hidden">
@@ -34,9 +46,15 @@
 			<div class="flex flex-col justify-center items-center w-screen font-airstrike min-h-screen">
 				<div class="flex flex-row items-center justify-center w-3/4 pt-14">
 					<div class="basis-1/2">
-						<h2 class="text-white text-3xl md:text-6xl font-airstrike">Mikä ja mitä?</h2>
+						<h2 class="text-white text-3xl md:text-6xl font-airstrike">
+							<span lang="fi">Mikä ja mitä?</span>
+							<span lang="en">What and what?</span>
+						</h2>
 						<div class="bg-[#eba432] border border-r-2 rounded-2xl p-5 text-2xl font-airstrike">
-						<p class="text-white text-md md:text-2xl">Vuoden hulluimmat kekkerit</p>
+						<p class="text-white text-md md:text-2xl">
+						<span lang="fi">Vuoden hulluimmat kekkerit</span>
+						<span lang="en">This year's craziest party</span>
+						</p>
 					</div>
 				</div>
 				<div class="basis-1/2"></div>
@@ -44,10 +62,17 @@
 			<div class="flex flex-row items-center justify-center w-3/4 pt-14">
 				<div class="basis-1/4"></div>
 				<div class="basis-1/2 ">
-					<h2 class="text-white text-3xl md:text-6xl font-airstrike">Missä ja milloin?</h2>
+					<h2 class="text-white text-3xl md:text-6xl font-airstrike">
+						<span lang="fi">Missä ja milloin?</span>
+						<span lang="en">Where and when?</span>
+					</h2>
 					<div class="bg-[#e67852] border border-r-2 rounded-2xl p-5 text-2xl font-airstrike">
 						<p class="text-white text-md md:text-2xl">
-							26.2 klo 18.00 @ <a href="https://maps.app.goo.gl/FzB16cfH1bx2SHHX6" class="underline">Betonimiehenkuja 3, Otaniemi</a>.</p>
+							26.2
+							<span lang="fi">klo</span>
+							<span lang="en">at</span>
+							18.00 @
+							<a href="https://maps.app.goo.gl/FzB16cfH1bx2SHHX6" class="underline">Betonimiehenkuja 3, Otaniemi</a>.</p>
 						</div>
 					</div>
 					<div class="basis-1/4"></div>
@@ -57,7 +82,14 @@
 					<div class="basis-1/2 ">
 						<h2 class="text-white text-3xl md:text-6xl font-airstrike ">Teema?</h2>
 							<div class="bg-[#bb4358] border border-r-2 rounded-2xl p-5 text-2xl font-airstrike">
-							<p class="text-white text-md md:text-2xl">🛸🛸 Scifi! 🛸🛸  DC: Haalarit ja jotain scifiä.</p>
+							<p class="text-white text-md md:text-2xl">
+								🛸🛸
+								<span lang="fi">Scifi!</span>
+								<span lang="en">Sci-fi!</span>
+								🛸🛸  DC:
+								<span lang="fi">Haalarit ja jotain scifiä.</span>
+								<span lang="en">Overalls and something sci-fi.</span>
+							</p>
 						</div>
 					</div>
 				</div>
