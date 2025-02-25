@@ -22,13 +22,20 @@
 	</div>
 	<main class="">
 		<div class="ufo-sky-lower-upscreen fixed h-screen w-svw -z-10"></div>
+
+		<div class="absolute top-0 right-0 w-[300px] text-xl m-5 invisible lg:visible text-center bg-gray-700/30 text-white font-RobotoMono backdrop-blur-sm p-5 font-normal rounded-3xl border-gray-300 border">
+			<span lang="fi">Seuraa tuloksia omalla laitteellasi</span>
+			<span lang="en">Follow the results on your own device</span>
+			<img src="res/ylikellotus_qr.png" class="rounded-lg mx-auto my-2" width="200" alt="QR-code to https://ylikellotus.fi/chart.html">
+		</div>
+
 		<section class="flex flex-col justify-center items-center z-50">
 			<h2 class="font-airstrike text-white text-xl md:text-3xl font-bold lg:text-7xl 2xl:text-5xl z-100 my-16">
 				<span lang="fi">Kellotustulokset</span>
 				<span lang="en">Clocking results</span>
 			</h2>
 
-			<div class="mx-auto space-y-4 w-4/5 z-10 bg-gray-700/30 backdrop-blur-sm p-5 font-normal rounded-3xl border-gray-300 border overflow-y-scroll">
+			<div class="mx-auto space-y-4 w-4/5 xl:w-1/2 z-10 bg-gray-700/30 backdrop-blur-sm p-5 font-normal rounded-3xl border-gray-300 border overflow-y-scroll">
 				<table class="table font-RobotoMono text-white font-normal lg:text-3xl">
 					<thead class="font-normal lg:text-4xl text-white">
 						<tr class="border-white">
@@ -57,7 +64,7 @@
 				<span lang="en">Top guilds</span>
 			</h2>
 
-			<div class="mx-auto w-4/5 z-10 bg-gray-700/30 backdrop-blur-sm p-5 overflow-y-scroll font-normal rounded-3xl border border-gray-300 ">
+			<div class="mx-auto w-4/5 xl:w-1/2 z-10 bg-gray-700/30 backdrop-blur-sm p-5 overflow-y-scroll font-normal rounded-3xl border border-gray-300 ">
 				<table class="table font-RobotoMono text-white font-normal lg:text-3xl">
 					<thead class="font-normal lg:text-4xl text-white">
 						<tr class="border-white">
@@ -85,12 +92,10 @@
 
 			</div>
 
-
 			<a href="/" class="font-airstrike text-white text-2xl lg:text-3xl 2xl:text-3xl mt-64 pb-32 hover:underline">
 				<span lang="fi">Takaisin etusivulle</span>
 				<span lang="en">Front page</span>
 			</a>
-
 		</section>
 	</main>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
