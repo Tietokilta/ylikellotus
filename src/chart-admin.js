@@ -57,7 +57,7 @@ const postScores = () => {
 
 
 const getScores = () => {
-  fetch("https://backend-tb3t.onrender.com")
+  fetch("res/results.json")
     .then((res) => {
       if (!res.ok) {
         throw new Error("Failed to fetch leaderboard data");
