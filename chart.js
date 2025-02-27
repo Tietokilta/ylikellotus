@@ -1,5 +1,6 @@
 const getScores = () => {
-    fetch("https://backend-tb3t.onrender.com")
+    // fetch("https://backend-tb3t.onrender.com")
+    fetch("res/results.json")
     .then((res) => {
       if (!res.ok) {
         throw new Error("Failed to fetch leaderboard data");
@@ -13,7 +14,7 @@ const getScores = () => {
     .catch((error) => {
       console.error("ERROR WITH FETCHING LEADERBOARD DATA: " + error);
     });
-  setTimeout(getScores, 10000);
+  // setTimeout(getScores, 10000);
 }
 
 const grouped = (data) => {
