@@ -69,7 +69,7 @@ const setGuilds = (data) => {
         <tr class="border-white">
           <th>${d.name}</th>
           <th>${d.total}</th>
-          <th>${d.average/1000} s</th>
+          <th>${(d.average/1000).toFixed(2)} s</th>
           <th>${d.median/1000} s</th>
         </tr>   
         `
