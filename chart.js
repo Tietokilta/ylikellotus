@@ -14,7 +14,7 @@ const getScores = () => {
     .catch((error) => {
       console.error("ERROR WITH FETCHING LEADERBOARD DATA: " + error);
     });
-  // setTimeout(getScores, 10000);
+  setTimeout(getScores, 10000);
 }
 
 const grouped = (data) => {
@@ -29,7 +29,7 @@ const grouped = (data) => {
       }
     })
     result.forEach((g) => {
-      g.average = g.scores.reduce((acc, c) => acc + c.time, 0) / g.scores.length;
+      g.average = g.scores.reduce((acc, c) => acc + c.time, 0) / g.scores.length
       g.median = g.scores[Math.floor(g.scores.length / 2)].time;
       g.total = g.scores.length;
     })
@@ -45,10 +45,8 @@ const setTableData = (data) => {
         return;
 
     const container = document.getElementById("individual-results");
-    container.innerHTML = "";
-
-    data.forEach((d,i) => {
-        container.innerHTML += `
+    container.innerHTML = data.map((d,i) => 
+        `
         <tr class="border-white">
 						<th>${i + 1}</th>
 						<th>${d.name}</th>
@@ -56,8 +54,7 @@ const setTableData = (data) => {
 						<th>${d.time/1000} s</th>
 				</tr>    
         `
-
-    })
+    ).join("")
 
 }
 
@@ -66,18 +63,19 @@ const setGuilds = (data) => {
         return;
 
     const container = document.getElementById("guild-results");
-    container.innerHTML = "";
+    container.innerHTML =
 
-    data.forEach(d => {
-        container.innerHTML += `
+    data.map(d => 
+        `
         <tr class="border-white">
           <th>${d.name}</th>
           <th>${d.total}</th>
-          <th>${d.average/1000} s</th>
+          <th>${(d.average/1000).toFixed(2)} s</th>
           <th>${d.median/1000} s</th>
         </tr>   
         `
-    })
+    ).join("")
+	console.log("skibidi")
 
 }
 
