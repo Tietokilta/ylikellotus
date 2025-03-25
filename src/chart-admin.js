@@ -22,7 +22,7 @@ const postScores = () => {
 
   const name = document.getElementById("name").value
   const guild = document.getElementById("guild").value
-  const time = parseFloat(document.getElementById("time").value) * 1000
+  const time = Math.round(parseFloat(document.getElementById("time").value) * 1000)
 
 
   fetch("https://backend-tb3t.onrender.com", {
