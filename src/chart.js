@@ -45,10 +45,8 @@ const setTableData = (data) => {
         return;
 
     const container = document.getElementById("individual-results");
-    container.innerHTML = "";
-
-    data.forEach((d,i) => {
-        container.innerHTML += `
+    container.innerHTML = data.map((d,i) => 
+        `
         <tr class="border-white">
 						<th>${i + 1}</th>
 						<th>${d.name}</th>
@@ -56,8 +54,7 @@ const setTableData = (data) => {
 						<th>${d.time/1000} s</th>
 				</tr>    
         `
-
-    })
+    ).join("")
 
 }
 
@@ -66,10 +63,9 @@ const setGuilds = (data) => {
         return;
 
     const container = document.getElementById("guild-results");
-    container.innerHTML = "";
+    container.innerHTML =
 
-    data.forEach(d => {
-        container.innerHTML += `
+    data.map(d => 
         <tr class="border-white">
           <th>${d.name}</th>
           <th>${d.total}</th>
@@ -77,7 +73,7 @@ const setGuilds = (data) => {
           <th>${d.median/1000} s</th>
         </tr>   
         `
-    })
+    ).join("")
 
 }
 
