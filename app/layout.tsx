@@ -19,19 +19,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lato.className}>
-        <div className="max-w-5xl mx-auto">
-          <header className="flex flex-row items-center justify-between mx-auto px-4 py-3 sm:px-6">
-            <div className="flex flex-row gap-2">
-              <Link href="/"><strong className="text-4xl">Ylikelatus 2026</strong></Link>
-            </div>
-            <div className="flex flex-row gap-2">
-              <Link href="/contact">Ota yhteyttä</Link>
-              <Link href="/login">Kirjaudu</Link>
-            </div>
-          </header>
-        </div>
-        {children}
+        <header className="sticky top-0 bg-blue-700 text-white flex flex-row items-center justify-between mx-auto px-4 py-3 sm:px-6">
+          <div className="flex flex-row gap-2">
+            <Link href="/"><strong className="text-4xl">Ylikelatus 2026</strong></Link>
+          </div>
+          <div className="flex flex-row gap-2">
+            <Link href="/contact">Ota yhteyttä</Link>
+            <Link href="/login">Kirjaudu</Link>
+          </div>
+        </header>
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <footer className="bg-blue-700 text-white flex justify-between px-4 py-3">
+          <div>
+            <p>Copyright © 2026 Tietokilta, All Rights Reserved</p>
+          </div>
+          <div className="flex gap-4">
+            <Link className="hover:underline" href="/">Tietosuoja ja evästeet</Link>
+            <Link className="hover:underline" href="">Saavutettavuusseloste</Link>
+          </div>
+        </footer>
       </body>
-    </html>
+    </html >
   );
 }
