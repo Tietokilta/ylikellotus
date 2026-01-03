@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lato } from 'next/font/google';
 import "./globals.css";
 
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const lato = Lato({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Ylikelatus 2026",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={lato.className}>
         <header className="sticky top-0 bg-blue-700 text-white flex flex-row items-center justify-between mx-auto px-4 py-3 sm:px-6">
           <div className="flex flex-row gap-2">
             <Link href="/"><strong className="text-4xl">Ylikelatus 2026</strong></Link>
