@@ -31,13 +31,15 @@ export default function RootLayout({
         <main className="min-h-screen">
           {children}
         </main>
-        <footer className="bg-blue-700 text-white flex justify-between px-4 py-3">
-          <div>
-            <p>Copyright © 2026 Tietokilta, All Rights Reserved</p>
+        <footer className="bg-blue-700 text-white flex justify-between px-4 py-3 text-sm">
+          <div className="flex gap-0 flex-col md:gap-2 md:flex-row self-end">
+            <p>© 2026 Tietokilta</p>
+            <p>Kaikki oikeudet pidätetään</p>
           </div>
-          <div className="flex gap-4">
-            <Link className="hover:underline" href="/">Tietosuoja ja evästeet</Link>
-            <Link className="hover:underline" href="">Saavutettavuusseloste</Link>
+          <div className="flex gap-2 flex-col md:gap-4 md:flex-row">
+            <Link className="hover:underline self-end" href="">Anna palautetta</Link>
+            <Link className="hover:underline self-end" href="/">Tietosuoja ja evästeet</Link>
+            <Link className="hover:underline self-end" href="">Saavutettavuusseloste</Link>
           </div>
         </footer>
       </body>
