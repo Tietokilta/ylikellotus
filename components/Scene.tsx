@@ -6,9 +6,9 @@ type SceneProps = {
 export function Scene({ children, className = "" }: SceneProps) {
   return (
     <section
-      className={`relative h-[200vh] w-full ${className}`}
+      className={`relative min-h-[200vh] ${className}`}
     >
-      <div className="sticky top-16 h-screen overflow-hidden">
+      <div className="sticky top-16">
         {children}
       </div>
     </section>
