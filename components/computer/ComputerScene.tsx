@@ -15,7 +15,7 @@ const windowIndex: Record<WindowKey, React.FC> = {
 }
 
 function openVip() {
-    open("/assets/vip_video.webm", "_blank");
+    open("https://archive.org/download/youtube-xvFZjo5PgG0/xvFZjo5PgG0.mp4", "_blank");
 }
 
 export default function ComputerScene() {
