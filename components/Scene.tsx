@@ -8,7 +8,7 @@ export function Scene({ children, className = "" }: SceneProps) {
     <section
       className={`w-full md:max-w-[1000px] h-full ${className}`}
     >
-      <div className="sticky top-16">
+      <div className="top-16">
         {children}
       </div>
     </section>
