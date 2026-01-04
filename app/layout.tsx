@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lato.className}>
-        <header className="sticky top-0 bg-blue-700 text-white flex flex-row items-center justify-between mx-auto px-4 py-3 sm:px-6">
+        <header className="fixed left-0 right-0 h-16 z-50 top-0 bg-blue-700 text-white flex flex-row items-center justify-between mx-auto px-4 py-3 sm:px-6">
           <div className="flex flex-row gap-2">
             <Link href="/"><strong className="text-4xl">Ylikelatus 2026</strong></Link>
           </div>
