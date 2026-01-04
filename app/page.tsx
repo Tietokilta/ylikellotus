@@ -1,4 +1,4 @@
-import ComputerScene from "@/components/ComputerScene";
+import ComputerScene from "@/components/computer/ComputerScene";
 import OfficeScene from "@/components/OfficeScene";
 import RatScene from "@/components/RatScene";
 
