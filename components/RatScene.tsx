@@ -2,7 +2,7 @@ import { Scene } from "./Scene";
 
 export default function RatScene() {
     return (
-        <Scene className="w-[calc(100vh*11/16)] min-h-[0] h-[5vh]">
+        <Scene className="h-fit mt-[-25%] min-h-[0]">
             <div
                 style={{
                     position: "relative",
@@ -21,7 +21,6 @@ export default function RatScene() {
                         style={{ 
                             width: "40%", 
                             objectFit: "contain",
-                            transform: "translateY(-100%)"
                         }}
                     />
                     <img
@@ -30,7 +29,6 @@ export default function RatScene() {
                         style={{ 
                             width: "40%", 
                             objectFit: "contain",
-                            transform: "translateY(-70%)"
                         }}
                     />
                 </div>

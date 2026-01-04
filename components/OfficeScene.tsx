@@ -2,7 +2,7 @@ import { Scene } from "./Scene";
 
 export default function OfficeScene() {
     return (
-        <Scene>
+        <Scene className="min-h-[100vh]">
             insert office scene
         </Scene>
     )
