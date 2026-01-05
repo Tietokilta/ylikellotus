@@ -2,7 +2,7 @@ import { Scene } from "./Scene";
 
 export default function RatScene() {
     return (
-        <Scene className="sticky bottom-0 h-fit mt-[-25%] min-h-[0]">
+        <Scene className="h-fit mt-[-25%] min-h-[0]">
             <div
                 style={{
                     position: "relative",
