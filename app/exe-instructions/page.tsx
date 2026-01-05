@@ -40,7 +40,7 @@ export default function ExeInstructions() {
                 Videohakemus toimii osana kokonaisarviointia, ja sen avulla pyritään tunnistamaan hakijat, joiden tausta, arvot ja motivaatio vastaavat EXECUTIVE-tason odotuksia.
             </p>
             <p className="py-8">
-                <strong>Toimita videotiedosto sähköpostiin ylikellotus (at) tietokilta.fi 20.1. mennessä!</strong>
+                <strong>Toimita videotiedosto sähköpostiin ylikellotus (at) tietokilta.fi 22.1. mennessä!</strong>
             </p>
         </div>
     )
