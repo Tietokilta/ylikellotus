@@ -2,7 +2,7 @@ import { Scene } from "./Scene";
 
 export default function RatScene() {
     return (
-        <Scene className="h-fit mt-[-25%] min-h-[0]">
+        <Scene className="h-fit min-h-[0] overflow-visible">
             <div
                 style={{
                     position: "relative",
@@ -12,7 +12,9 @@ export default function RatScene() {
                 <div
                     style={{
                         display: "flex",
-                        justifyContent: "center"
+                        justifyContent: "center",
+						position: "absolute",
+						bottom: "0",
                     }}
                 >
                     <img
