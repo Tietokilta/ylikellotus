@@ -1,6 +1,6 @@
 export default function ExeInstructions() {
     return (
-        <div className="mx-auto pt-16 prose lg:prose-xl max-w-4xl px-4 text-justify [&_p]:my-2">
+        <div className="mx-auto prose lg:prose-xl max-w-4xl px-4 text-justify [&_p]:my-2">
             <p><strong>Ohjeet EXECUTIVE-lipun videohakemuksen toteuttamiseen</strong></p>
             <p>
             Pyydämme hakijoita toimittamaan noin 3,5 minuutin mittaisen videohakemuksen (vähintään 300 sanaa), jossa arvioidaan hakijan soveltuvuutta EXECUTIVE-tason lippuun. Videon tarkoituksena on antaa kokonaisvaltainen kuva hakijan taustasta, motivaatiosta ja suhteesta organisaatiomme arvoihin.

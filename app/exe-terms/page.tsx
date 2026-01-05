@@ -1,6 +1,6 @@
 export default function ExeTerms() {
     return (
-        <div className="mx-auto pt-16 prose lg:prose-xl max-w-4xl px-4 text-justify [&_p]:my-12">
+        <div className="mx-auto prose lg:prose-xl max-w-4xl px-4 text-justify [&_p]:my-12">
             <p className="text-xl">
                 <strong>
                     TERMS, CONDITIONS, OBSERVATIONS, AND VARIOUS ANCILLARY STATEMENTS
