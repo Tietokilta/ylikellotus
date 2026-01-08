@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: { /* balloon appear animation */
+        appear: {
+          '0%': { transform: 'scale(0)', opacity: '1', transformOrigin: 'center' },
+          '100%': { transform: 'scale(1)', opacity: '1', transformOrigin: 'center' },
+        },
+      },
+      animation: {
+        appear: 'appear 0.4s cubic-bezier(.5,1.26,.64,1) forwards 1',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lato } from 'next/font/google';
 import "./globals.css";
+import BalloonWrapper from "@/components/balloons/BalloonWrapper";
 
 
 const lato = Lato({ subsets: ["latin"], weight: ["400"] });
@@ -25,9 +26,11 @@ export default function RootLayout({
           <div className="flex flex-row gap-2">
           </div>
         </header>*/}
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <BalloonWrapper>
+          <main className="min-h-screen">
+            {children}
+          </main>
+        </BalloonWrapper>
         <footer className="bg-blue-700 text-white flex justify-between px-4 py-3 text-sm">
           <div className="flex gap-0 flex-col md:gap-2 md:flex-row self-end">
             <p>© 2026 Tietokilta</p>
