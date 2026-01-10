@@ -14,10 +14,6 @@ const windowIndex: Record<WindowKey, React.FC> = {
     "GameTwo": GameTwo
 }
 
-function openVip() {
-    open("https://archive.org/download/youtube-xvFZjo5PgG0/xvFZjo5PgG0.mp4", "_blank");
-}
-
 export default function ComputerScene() {
     const [window, setWindow] = useState("AdPlayer" as WindowKey);
 
@@ -40,10 +36,10 @@ export default function ComputerScene() {
                     title="Pelaa toista peliä" data-balloon-spawnable="false"
                     className="absolute left-[47%] top-[6.5%] w-[12%] h-[3%] cursor-pointer"
                     onClick={() => setWindow("GameTwo")}/>
-                <div
+                <a
                     title="Osta VIP-lippu" data-balloon-spawnable="false"
                     className="absolute left-[59%] top-[6.5%] w-[12%] h-[3%] cursor-pointer"
-                    onClick={() => openVip()}/>
+                    href="/exe-instructions"/>
             </div>
         </Scene>
     )

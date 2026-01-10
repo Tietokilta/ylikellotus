@@ -42,6 +42,9 @@ export default function ExeInstructions() {
             <p className="py-8">
                 <strong>Toimita videotiedosto sähköpostiin ylikellotus (at) tietokilta.fi 22.1. mennessä!</strong>
             </p>
+            <p>
+                Lähettämällä hakemuksen hyväksyt <a data-balloon-spawnable="false" className="text-blue-500" href="/exe-terms">sopimusehdot</a>.
+            </p>
         </div>
     )
 }
