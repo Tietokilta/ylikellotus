@@ -18,10 +18,10 @@ export default function ComputerScene() {
     const [window, setWindow] = useState("AdPlayer" as WindowKey);
 
     return (
-        <Scene>
-            <div className="relative w-full">
-                <img alt="Computer" src="/assets/kone.png" className="w-full h-auto"/>
-                <div className="absolute left-[23%] top-[6.5%] max-w-[54.5%] border-black border-2" data-balloon-spawnable="false">
+        <Scene className="relative min-h-[100vh] border">
+            <div className="absolute min-w-[1400px] w-full translate-x-[-50%] left-[50%] ">
+                <img alt="Computer" src="/assets/wide/kone.png" className="w-full h-auto"/>
+                <div className="absolute left-[37.1%] top-[9.7%] w-[26.1%] border-black border-2" data-balloon-spawnable="false">
                     {React.createElement(windowIndex[window])}
                 </div>
                 <div

@@ -19,16 +19,16 @@ export default function OfficeScene() {
     }, []);
 
     return (
-        <Scene className="min-h-[100vh] relative">
+        <Scene className="min-h-[85vh] relative">
             <div style={{
                 translate: `0 ${scrollProgress * 0.5}px`,
-            }} className="absolute origin-top scale-150 md:scale-100">
-                <img alt="Toimisto" src="/assets/toimisto.png" />
+            }} className="absolute min-w-[1400px] w-full translate-x-[-50%] left-[50%]">
+                <img alt="Toimisto" src="/assets/wide/toimisto.png" />
             </div>
             <div style={{
-                translate: `0 ${scrollProgress * 0.3 + 280}px`
-            }} className="absolute">
-                <img alt="Cubicles" src="/assets/cubicles.png" />
+                translate: `0 ${scrollProgress * 0.25 + 400}px`
+            }} className="absolute min-w-[600px] w-full translate-x-[-50%] left-[50%]">
+                <img alt="Cubicles" src="/assets/wide/cubicles.png" />
             </div>
         </Scene>
     )
