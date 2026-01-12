@@ -1,8 +1,9 @@
 import { Scene } from "./Scene";
+import {KIDE_URL} from "@/app/constants";
 
 export default function RatScene() {
     return (
-        <Scene className="h-fit overflow-visible translate-y-[372px]">
+        <Scene className="h-fit overflow-visible -mt-[600px]">
             <div className="relative overflow-visible">
                 <div className="flex justify-center absolute bottom-0 w-full">
                     <img
