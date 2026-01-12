@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Digit = ({ value }: { value: number }) => {
     return (
-        <div className="relative w-10 h-14 overflow-hidden rounded-md bg-zinc-900 text-white font-mono text-3xl font-bold flex items-center justify-center">
+        <div className="relative w-full h-full overflow-hidden rounded-md bg-zinc-900 text-white font-mono text-xs font-bold flex items-center justify-center">
             <AnimatePresence mode="popLayout">
                 <motion.span
                     key={value}
@@ -23,7 +23,7 @@ const Digit = ({ value }: { value: number }) => {
 };
 
 interface CountdownProps {
-    targetDate?: string;
+    targetDate?: Date | string;
 }
 
 export default function Countdown({ targetDate = "2026-01-01T00:00:00" }: CountdownProps) {
@@ -53,48 +53,38 @@ export default function Countdown({ targetDate = "2026-01-01T00:00:00" }: Countd
     };
 
     return (
-        <div className="flex flex-col items-center gap-4 p-4">
-            <div className="flex justify-center items-center gap-2 sm:gap-4">
-                <div className="flex flex-col items-center gap-2">
-                    <div className="flex gap-1">
+        <div className={`flex flex-col items-center gap-4 w-full h-full ${className}`}>
+            <div className="flex justify-center items-center gap-3 w-full h-full">
+                <div className="flex flex-col items-center h-full w-full">
+                    <div className="flex gap-1 h-full w-full">
                         {getDigits(days).map((d, i) => (
                             <Digit key={`d-${i}`} value={d} />
                         ))}
                     </div>
-                    <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">Days</span>
                 </div>
 
-                <span className="text-3xl font-bold text-zinc-500 pb-6">:</span>
-
-                <div className="flex flex-col items-center gap-2">
-                    <div className="flex gap-1">
+                <div className="flex flex-col items-center w-full h-full">
+                    <div className="flex gap-1 w-full h-full">
                         {getDigits(hours).map((d, i) => (
                             <Digit key={`h-${i}`} value={d} />
                         ))}
                     </div>
-                    <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">Hours</span>
                 </div>
 
-                <span className="text-3xl font-bold text-zinc-500 pb-6">:</span>
-
-                <div className="flex flex-col items-center gap-2">
-                    <div className="flex gap-1">
+                <div className="flex flex-col items-center w-full h-full">
+                    <div className="flex gap-1 w-full h-full">
                         {getDigits(minutes).map((d, i) => (
                             <Digit key={`m-${i}`} value={d} />
                         ))}
                     </div>
-                    <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">Minutes</span>
                 </div>
 
-                <span className="text-3xl font-bold text-zinc-500 pb-6">:</span>
-
-                <div className="flex flex-col items-center gap-2">
-                    <div className="flex gap-1">
+                <div className="flex flex-col items-center w-full h-full">
+                    <div className="flex gap-1 w-full h-full">
                         {getDigits(seconds).map((d, i) => (
                             <Digit key={`s-${i}`} value={d} />
                         ))}
                     </div>
-                    <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">Seconds</span>
                 </div>
             </div>
         </div>
