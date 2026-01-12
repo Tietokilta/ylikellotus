@@ -1,4 +1,4 @@
-import {defineConfig} from "next/dist/experimental/testmode/playwright";
+import { defineConfig } from "eslint/config";
 
 export default defineConfig([{
     rule: {
