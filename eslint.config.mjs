@@ -1,7 +1,7 @@
 import { defineConfig } from "eslint/config";
 
 export default defineConfig([{
-    rule: {
+    rules: {
         "@next/next/no-img-element": "off",
     }
 }])
