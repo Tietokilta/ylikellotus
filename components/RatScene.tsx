@@ -10,7 +10,7 @@ export default function RatScene() {
                         alt="Rat left"
                         className="w-[40%] object-contain"/>
                     <img
-                        src="/assets/osta1.png"
+                        src="/assets/osta.png"
                         alt="Rat right"
                         className="w-[40%] object-contain"/>
                 </div>
