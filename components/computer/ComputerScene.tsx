@@ -18,7 +18,7 @@ export default function ComputerScene() {
     const [window, setWindow] = useState("AdPlayer" as WindowKey);
 
     return (
-        <Scene className="absolute translate-y-[-600px]">
+        <Scene className="translate-y-[-600px]">
             <div className="relative min-w-[1600px] w-full translate-x-[-50%] left-[50%] ">
                 <img alt="Computer" src="/assets/wide/kone.png" className="w-full h-auto"/>
                 <img alt="Computer" src="/assets/wide/pöydänalus.png" className="w-auto h-auto"/>
