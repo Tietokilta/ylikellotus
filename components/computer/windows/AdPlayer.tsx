@@ -6,7 +6,7 @@ export default function AdPlayer() {
     return (
         <>
             <ExportedImage alt="Rat Tube" src={ratTubeImg} className="w-full h-full"/>
-            <video preload="none" className="absolute left-[3%] top-[18%] w-[78%] border-black border-2"
+            <video className="absolute left-[3%] top-[18%] w-[78%] aspect-video border-black border-2"
                    controls={true} autoPlay={false} playsInline={true}
                    src={VIDEO_URL}
             ></video>
