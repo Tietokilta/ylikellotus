@@ -21,7 +21,7 @@ export default function OfficeScene() {
     }, []);
 
     return (
-        <Scene className="h-[85vh] relative">
+        <Scene className="!h-[85vh] relative">
             <div style={{
                 translate: `0 ${scrollProgress * 0.5}px`,
             }} className="absolute min-w-[1600px] w-full min-h-[85vh] translate-x-[-50%] left-[50%]">
