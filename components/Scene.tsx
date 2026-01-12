@@ -1,12 +1,13 @@
 type SceneProps = {
   children: React.ReactNode;
+  style?: React.CSSProperties;
   className?: string;
 };
 
-export function Scene({ children, className = "" }: SceneProps) {
+export function Scene({ children, style = {}, className = "" }: SceneProps) {
   return (
     <section
-      className={`w-full md:max-w-[1980px] h-full overflow-hidden ${className}`}
+      style={style} className={`w-full md:max-w-[1980px] h-full overflow-hidden ${className}`}
     >
       <div className="top-0">
         {children}
