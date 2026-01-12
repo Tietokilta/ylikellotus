@@ -171,7 +171,90 @@ export default function ExeTerms() {
                 including symbolic value, training value, entertainment value, and dinner-conversation value.
             </p>
             <p>
-                <strong>SECTION X: FINAL BLAME ALLOCATION AND CLOSING REMARKS </strong>
+                <strong>SECTION X: TEMPORAL EFFECTS, RETROACTIVITY, AND CAUSAL CONFUSION </strong>
+                These Terms may apply retroactively, proactively, interactively, and/or sideways in time.
+                Actions taken before you read these Terms shall be considered compliant. Actions taken after
+                you forget these Terms shall also be considered compliant. Actions taken simultaneously with
+                reading these Terms are deemed especially compliant.
+            </p>
+            <p>
+                Any perception that events occurred “before” consent was given is purely subjective and not
+                binding. Consent, once given, is assumed to have always existed.
+            </p>
+            <p>
+                För tydlighetens skull: om detta känns som en tidsparadox är det korrekt uppfattat och fullt
+                accepterat inom ramen för dessa villkor.
+            </p>
+            <p>
+                <strong>SECTION XI: IDENTITY, LIKENESS, AND MISTAKEN ASSUMPTIONS </strong>
+                You represent and warrant that you are you, or at least close enough for our purposes.
+                We make no guarantees that we will continue to believe this, remember this, or care.
+            </p>
+            <p>
+                We may confuse you with someone else. We may correctly identify you and still treat you as
+                someone else. Any resemblance between you and other participants, living, dead, fictional,
+                or future, is coincidental if and only if such resemblance would concievably cause or bring about
+                detriment to us, our interests, or any party we deem protected by this clause.
+            </p>
+            <p>
+                Om din identitet används på ett sätt som känns “fel”, “orättvist”, eller “existentiellt
+                destabiliserande”, är detta att betrakta som en bieffekt, inte ett fel.
+            </p>
+            <p>
+                <strong>SECTION XII: COMMUNICATION, NON-COMMUNICATION, AND IMPLIED MESSAGES </strong>
+                We are not obligated to contact you. We may contact you anyway. We may intend to contact you
+                and fail. Silence shall be interpreted as meaning. Messages shall be interpreted as noise.
+            </p>
+            <p>
+                The section in the previous paragraph considering the interpretation of silence and messages
+                shall not be interpreted in any way, shape, or form detrimental to the monetary, explicit, implicit,
+                specified, ill-specified or unspecified interests of us.
+            </p>
+            <p>
+                Any emails, messages, signals, gestures, or vibes you believe you have received from us may
+                or may not have originated from us. Any interpretation you make is your responsibility.
+            </p>
+            <p>
+                Du accepterar härmed att utebliven återkoppling inte innebär något särskilt, men samtidigt
+                kan innebära precis vad som helst.
+            </p>
+            <p>
+                <strong>SECTION XIII: EXPECTATIONS, DISAPPOINTMENT, AND PERSONAL GROWTH </strong>
+                You acknowledge that you may have expectations. You further acknowledge that these expectations
+                may not be met. This is not a defect of the process but a feature of reality. You shall, incurring
+                no cost to us, lower your expectations appropriately until they coincide with reality.
+            </p>
+            <p>
+                Any disappointment arising from participation shall be treated as a learning opportunity,
+                character-building exercise, or anecdote to be told later. We bear no responsibility for
+                emotional outcomes, realizations, or sudden clarity.
+            </p>
+            <p>
+                Besvikelse är en del av upplevelsen och därmed implicit accepterad.
+            </p>
+            <p>
+                <strong>SECTION XIV: FORCE MAJEURE, COSMIC EVENTS, AND ADMINISTRATIVE SHRUGGING </strong>
+                We shall not be held responsible for delays, losses, changes, or cancellations caused by
+                events beyond or within our control, including but not limited to natural disasters, technical
+                failures, organizational fatigue, loss of interest, or the general entropy of systems.
+            </p>
+            <p>
+                Should the universe become inhospitable to the continuation of this process, these Terms
+                shall nevertheless be considered fulfilled to the maximum extent theoretically possible.
+            </p>
+            <p>
+                Om världen går under, anses detta inte utgöra ett avtalsbrott.
+            </p>
+            <p>
+                <strong>SECTION XV: CONTINUING ACCEPTANCE </strong>
+                Acceptance of these Terms is not a one-time event but a continuous state. Each moment you
+                remember, forget, recall, regret, or rationalize your submission constitutes renewed acceptance.
+            </p>
+            <p>
+                Att du läst ända hit betraktas som ett slutgiltigt och förnyat godkännande.
+            </p>
+            <p>
+                <strong>SECTION XVI: FINAL BLAME ALLOCATION AND CLOSING REMARKS </strong>
                 If you are unhappy, confused, surprised, or offended by any part of this document, please
                 remember that you accepted it. If you do not remember accepting it, please remember that this
                 is also your responsibility.
