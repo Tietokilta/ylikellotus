@@ -19,28 +19,36 @@ export default function ComputerScene() {
 
     return (
         <Scene className="relative min-h-[100vh] border">
-            <div className="absolute min-w-[1400px] w-full h-[100%] translate-x-[-50%] left-[50%] ">
+            <div className="absolute min-w-[1400px] w-full translate-x-[-50%] left-[50%] ">
                 <img alt="Computer" src="/assets/wide/kone.png" className="w-full h-auto"/>
                 <img alt="Computer" src="/assets/wide/pöydänalus.png" className="w-auto h-auto"/>
-                <div className="absolute left-[37.1%] top-[9.7%] w-[26.1%] border-black border-2" data-balloon-spawnable="false">
+                <div className="absolute left-[37.2%] top-[4%] w-[26%] h-[25.6%] border-black border-2" data-balloon-spawnable="false">
                     {React.createElement(windowIndex[window])}
                 </div>
                 <div
                     title="Katso mainosvideo" data-balloon-spawnable="false"
-                    className="absolute left-[23%] top-[6.5%] w-[12%] h-[3%] cursor-pointer"
-                    onClick={() => setWindow("AdPlayer")}/>
+                    className="absolute left-[37.25%] top-[2.5%] w-[5.5%] h-[2%] cursor-pointer"
+                    onClick={() => setWindow("AdPlayer")}>
+                        <p className="h-full text-[80%] text-center font-bold translate-y-[-15%]">RatTube</p>
+                </div>
                 <div
                     title="Pelaa peliä" data-balloon-spawnable="false"
-                    className="absolute left-[35%] top-[6.5%] w-[12%] h-[3%] cursor-pointer"
-                    onClick={() => setWindow("GameOne")}/>
+                    className="absolute left-[42.75%] top-[2.5%] w-[5.5%] h-[2%] cursor-pointer"
+                    onClick={() => setWindow("GameOne")}>
+                        <p className="h-full text-[80%] text-center font-bold translate-y-[-15%]">Game 1</p>
+                </div>
                 <div
                     title="Pelaa toista peliä" data-balloon-spawnable="false"
-                    className="absolute left-[47%] top-[6.5%] w-[12%] h-[3%] cursor-pointer"
-                    onClick={() => setWindow("GameTwo")}/>
+                    className="absolute left-[48.25%] top-[2.5%] w-[5.5%] h-[2%] cursor-pointer"
+                    onClick={() => setWindow("GameTwo")}>
+                        <p className="h-full text-[80%] text-center font-bold translate-y-[-15%]">Game 2</p>
+                </div>
                 <a
                     title="Osta VIP-lippu" data-balloon-spawnable="false"
-                    className="absolute left-[59%] top-[6.5%] w-[12%] h-[3%] cursor-pointer"
-                    href="/exe-instructions"/>
+                    className="absolute left-[53.75%] top-[2.5%] w-[5.5%] h-[2%] cursor-pointer"
+                    href="/exe-instructions">
+                        <p className="h-full text-[80%] text-center font-bold translate-y-[-15%]">VIP-ticket?</p>
+                </a>
             </div>
         </Scene>
     )
