@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Scene } from "./Scene";
+import Countdown from "@/components/Countdown";
+import {START_DATE} from "@/app/constants";
 
 export default function OfficeScene() {
     const [scrollProgress, setScrollProgress] = useState(0);
@@ -19,14 +21,14 @@ export default function OfficeScene() {
     }, []);
 
     return (
-        <Scene style={{
-            height: "85vh",
-            position: "relative"
-        }}>
+        <Scene className="h-[85vh] relative">
             <div style={{
                 translate: `0 ${scrollProgress * 0.5}px`,
             }} className="absolute min-w-[1600px] w-full min-h-[85vh] translate-x-[-50%] left-[50%]">
                 <img alt="Toimisto" src="/assets/wide/toimisto.png" />
+                <div className="absolute w-[9%] h-[2.2%] translate-x-[-50%] left-[calc(50%+8px)] bottom-[77.3%]">
+                    <Countdown targetDate={START_DATE} />
+                </div>
             </div>
             <div style={{
                 translate: `0 ${scrollProgress * 0.25 + 320}px`
