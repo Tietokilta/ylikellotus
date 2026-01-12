@@ -1,5 +1,7 @@
 import { Scene } from "./Scene";
 import {KIDE_URL} from "@/app/constants";
+import ExportedImage from 'next-image-export-optimizer'
+import poytaImg from '@/public/assets/wide/pöytä.png'
 
 
 export default function TableScene() {
@@ -25,8 +27,8 @@ export default function TableScene() {
                         Tietokillan HR-tiimi
                     </p>
                 </div>
-                <img alt="Table" src="/assets/wide/pöytä.png" className="w-full h-auto" />
-            </div>
-        </Scene>
-    )
-}
+                <ExportedImage alt="Table" src={poytaImg} className="w-full h-auto" />
+             </div>
+         </Scene>
+     )
+ }

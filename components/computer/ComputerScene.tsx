@@ -5,6 +5,9 @@ import {Scene} from "@/components/Scene";
 import AdPlayer from "@/components/computer/windows/AdPlayer";
 import GameOne from "@/components/computer/windows/GameOne";
 import GameTwo from "@/components/computer/windows/GameTwo";
+import ExportedImage from 'next-image-export-optimizer'
+import koneImg from '@/public/assets/wide/kone.png'
+import poydanalusImg from '@/public/assets/wide/pöydänalus.png'
 
 export type WindowKey = "AdPlayer" | "GameOne" | "GameTwo";
 
@@ -20,8 +23,8 @@ export default function ComputerScene() {
     return (
         <Scene className="translate-y-[-600px]">
             <div className="relative min-w-[1600px] w-full translate-x-[-50%] left-[50%] ">
-                <img alt="Computer" src="/assets/wide/kone.png" className="w-full h-auto"/>
-                <img alt="Computer" src="/assets/wide/pöydänalus.png" className="w-auto h-auto"/>
+                <ExportedImage alt="Computer" src={koneImg} className="w-full h-auto"/>
+                <ExportedImage alt="Under Table" src={poydanalusImg} className="w-auto h-auto"/>
                 <div className="absolute left-[37.2%] top-[4%] w-[26%] h-[25.6%] border-black border-2" data-balloon-spawnable="false">
                     {React.createElement(windowIndex[window])}
                 </div>
