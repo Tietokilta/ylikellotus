@@ -2,7 +2,7 @@ import { Scene } from "./Scene";
 
 export default function RatScene() {
     return (
-        <Scene className="h-fit overflow-visible">
+        <Scene className="h-fit overflow-visible translate-y-[372px]">
             <div className="relative overflow-visible">
                 <div className="flex justify-center absolute bottom-0 w-full">
                     <img
@@ -14,7 +14,6 @@ export default function RatScene() {
                         alt="Buy now"
                         className="max-h-[20vh] w-[30vw] translate-y-[5vw] object-contain"/>
                 </div>
-                
             </div>
         </Scene>
     )

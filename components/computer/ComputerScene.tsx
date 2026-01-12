@@ -18,8 +18,8 @@ export default function ComputerScene() {
     const [window, setWindow] = useState("AdPlayer" as WindowKey);
 
     return (
-        <Scene className="relative min-h-[100vh] border">
-            <div className="absolute min-w-[1400px] w-full translate-x-[-50%] left-[50%] ">
+        <Scene className="absolute translate-y-[-600px]">
+            <div className="relative min-w-[1600px] w-full translate-x-[-50%] left-[50%] ">
                 <img alt="Computer" src="/assets/wide/kone.png" className="w-full h-auto"/>
                 <img alt="Computer" src="/assets/wide/pöydänalus.png" className="w-auto h-auto"/>
                 <div className="absolute left-[37.2%] top-[4%] w-[26%] h-[25.6%] border-black border-2" data-balloon-spawnable="false">
