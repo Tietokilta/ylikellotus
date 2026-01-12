@@ -19,8 +19,9 @@ export default function ComputerScene() {
 
     return (
         <Scene className="relative min-h-[100vh] border">
-            <div className="absolute min-w-[1400px] w-full translate-x-[-50%] left-[50%] ">
+            <div className="absolute min-w-[1400px] w-full h-[100%] translate-x-[-50%] left-[50%] ">
                 <img alt="Computer" src="/assets/wide/kone.png" className="w-full h-auto"/>
+                <img alt="Computer" src="/assets/wide/pöydänalus.png" className="w-auto h-auto"/>
                 <div className="absolute left-[37.1%] top-[9.7%] w-[26.1%] border-black border-2" data-balloon-spawnable="false">
                     {React.createElement(windowIndex[window])}
                 </div>
