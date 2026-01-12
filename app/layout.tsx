@@ -31,6 +31,7 @@ export default function RootLayout({
             {children}
           </main>
         </BalloonWrapper>
+       {/*
         <footer className="bg-blue-700 text-white flex justify-between px-4 py-3 text-sm">
           <div className="flex gap-0 flex-col md:gap-2 md:flex-row self-end">
             <p>© 2026 Tietokilta</p>
@@ -38,7 +39,7 @@ export default function RootLayout({
           </div>
           <div className="flex gap-2 flex-col md:gap-4 md:flex-row">
           </div>
-        </footer>
+        </footer> */}
       </body>
     </html >
   );
