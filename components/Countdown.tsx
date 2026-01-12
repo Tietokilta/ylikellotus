@@ -53,7 +53,7 @@ export default function Countdown({ targetDate = "2026-01-01T00:00:00" }: Countd
     };
 
     return (
-        <div className={`flex flex-col items-center gap-4 w-full h-full ${className}`}>
+        <div className={`flex flex-col items-center gap-4 w-full h-full`}>
             <div className="flex justify-center items-center gap-3 w-full h-full">
                 <div className="flex flex-col items-center h-full w-full">
                     <div className="flex gap-1 h-full w-full">
