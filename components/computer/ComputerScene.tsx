@@ -46,12 +46,12 @@ export default function ComputerScene() {
                     onClick={() => setWindow("GameTwo")}>
                         <p className="text-[40%] lg:text-[70%] text-center font-bold -m-2 p-2">Game 2</p>
                 </div>
-                <div
+                <a
                     title="Osta VIP-lippu" data-balloon-spawnable="false"
                     className="absolute left-[53.75%] top-[2.5%] w-[5.5%] h-[2%] translate-y-[-15%] cursor-pointer flex flex-col justify-center"
-                    onClick={() => open("/exe-instructions", "_blank")}>
+                    href="/exe-instructions" target="_blank">
                         <p className="text-[40%] lg:text-[70%] text-center font-bold -m-2 p-2">VIP-ticket?</p>
-                </div>
+                </a>
             </div>
         </Scene>
     )
