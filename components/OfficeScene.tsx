@@ -24,18 +24,20 @@ export default function OfficeScene() {
     }, []);
 
     return (
-        <Scene className="!h-[85vh] relative">
+        <Scene className="relative grid place-items-center min-w-[1600px]">
             <div style={{
-                translate: `0 ${scrollProgress * 0.5}px`,
-            }} className="absolute min-w-[1600px] w-full min-h-[85vh] translate-x-[-50%] left-[50%]">
-                <ExportedImage alt="Toimisto" src={toimistoImg} />
-                <div className="absolute w-[9%] h-[2.2%] translate-x-[-50%] left-[calc(50%+8px)] bottom-[77.3%]">
-                    <Countdown targetDate={START_DATE} />
+                marginTop: `${-scrollProgress * 0.5}px`,
+            }} className="min-w-[1600px] w-full">
+                <div className="grid place-items-center">
+                    <ExportedImage alt="Toimisto" src={toimistoImg} className="col-start-1 row-start-1" />
+                    <div className="grid col-start-1 row-start-1 !min-h-[20px] !min-w-[9%] -mb-[-29.7%] ml-[1.1%]">
+                        <Countdown targetDate={START_DATE} />
+                    </div>
                 </div>
             </div>
             <div style={{
-                translate: `0 ${scrollProgress * 0.25 + 320}px`
-            }} className="absolute min-w-[800px] w-full translate-x-[-50%] left-[50%]">
+                top: `${-scrollProgress * 0.25 + 320}px`
+            }} className="absolute min-w-[1600px] w-full">
                 <ExportedImage alt="Cubicles" src={cubiclesImg} />
             </div>
         </Scene>

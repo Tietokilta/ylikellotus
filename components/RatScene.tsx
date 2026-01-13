@@ -8,9 +8,9 @@ import ostaImg from '@/public/assets/osta.png'
 
 export default function RatScene() {
     return (
-        <Scene className="h-fit overflow-visible md:-mt-[600px] -mt-[400px]">
+        <Scene className="h-fit overflow-visible col-start-1 row-start-1 flex justify-end flex-col ">
             <div className="relative overflow-visible">
-                <div className="flex justify-center absolute bottom-0 w-full">
+                <div className="flex justify-center w-full">
                     <ExportedImage
                         src={ratImg}
                         alt="Rat"
