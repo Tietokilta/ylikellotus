@@ -2,7 +2,7 @@ export default function ExeInstructions() {
     return (
         <div className="mx-auto prose lg:prose-xl max-w-4xl px-4 text-justify [&_p]:my-2">
             <p className="pt-8">
-                <sup>Available in English <a className="text-blue-500" href="#english">below</a>.</sup>
+                <sup>Available in English <a data-balloon-spawnable="false" className="text-blue-500" href="#english">below</a>.</sup>
             </p>
             <section id="finnish" className="mb-10">
                 <p><strong>Ohjeet EXECUTIVE-lipun videohakemuksen toteuttamiseen</strong></p>
