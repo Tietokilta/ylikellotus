@@ -26,7 +26,7 @@ export default function OfficeScene() {
     return (
         <Scene className="relative grid place-items-center min-w-[1600px]">
             <div style={{
-                marginTop: `${-scrollProgress * 0.5}px`,
+                transform: `translateY(${scrollProgress * 0.7}px)`,
             }} className="min-w-[1600px] w-full">
                 <div className="grid place-items-center">
                     <ExportedImage alt="Toimisto" src={toimistoImg} className="col-start-1 row-start-1" />
@@ -36,7 +36,7 @@ export default function OfficeScene() {
                 </div>
             </div>
             <div style={{
-                top: `${-scrollProgress * 0.25 + 320}px`
+                top: `${scrollProgress * 0.5 + 320}px`
             }} className="absolute min-w-[1600px] w-full">
                 <ExportedImage alt="Cubicles" src={cubiclesImg} />
             </div>
