@@ -7,7 +7,7 @@ import poytaImg from '@/public/assets/wide/pöytä.png'
 export default function TableScene() {
     return (
         <Scene className="translate-y-[-48px] h-full">
-            <div className="relative w-full md:min-w-[1600px] min-w-[900px] translate-x-[-50%] left-[50%]">
+            <div className="relative w-full md:min-w-[3400px] min-w-[900px] translate-x-[-50%] left-[50%]">
                 <div data-balloon-spawnable="false" className="absolute left-[59%] top-[15%] w-[16.5%] h-[30%] origin-top-left rotate-[20deg]" style={{clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 42.5%, 14.1% 37.2%, 0% 23%)", containerType: "inline-size"}}>
                     <p className={`font-normal text-[4.95cqw] text-justify font-serif`}>
                         Hei,<br/><br/>

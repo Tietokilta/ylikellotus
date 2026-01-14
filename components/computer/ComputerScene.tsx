@@ -22,7 +22,7 @@ export default function ComputerScene() {
 
     return (
         <Scene className="col-start-1 row-start-1">
-            <div className="relative min-w-[1000px] w-full translate-x-[-50%] left-[50%] ">
+            <div className="relative min-w-[1200px] md:min-w-[3400px] w-full translate-x-[-50%] left-[50%] ">
                 <ExportedImage alt="Computer" src={koneImg} className="w-full h-auto"/>
                 <ExportedImage alt="Under Table" src={poydanalusImg} className="w-auto h-auto"/>
                 <div className="absolute left-[37.2%] top-[4%] w-[26%] h-[25.6%] border-black border-2" data-balloon-spawnable="false">

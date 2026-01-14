@@ -8,7 +8,7 @@ export default function Home() {
         <main className="w-full mx-auto flex flex-col items-center bg-[#f7f0f0] overflow-hidden">
             <OfficeScene/>
             <TableScene/>
-            <div className="grid place-items-end md:-mt-[600px] -mt-[400px] grid-rows-[auto]">
+            <div className="grid place-items-end md:-mt-[1200px] -mt-[400px] grid-rows-[auto]">
                 <ComputerScene/>
                 <RatScene/>
             </div>
