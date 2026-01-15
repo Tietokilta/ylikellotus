@@ -7,6 +7,7 @@ import {START_DATE} from "@/app/constants";
 import ExportedImage from 'next-image-export-optimizer'
 import toimistoImg from '@/public/assets/wide/toimisto.png'
 import cubiclesImg from '@/public/assets/wide/cubicles.png'
+import useBreakpoint from "@/components/hooks/breakpoint";
 
 export default function OfficeScene() {
     const [scrollProgress, setScrollProgress] = useState(0);
@@ -23,6 +24,8 @@ export default function OfficeScene() {
         };
     }, []);
 
+    const hasMdBreakpoint = useBreakpoint("md");
+
     return (
         <Scene className="relative grid place-items-center min-w-[1600px] md:min-w-[3400px]">
             <div style={{
@@ -36,7 +39,7 @@ export default function OfficeScene() {
                 </div>
             </div>
             <div style={{
-                top: `${scrollProgress * 0.5 + 320}px`
+                top: `${scrollProgress * 0.5 + (hasMdBreakpoint ? 700 : 300)}px`
             }} className="absolute min-w-[1600px] md:min-w-[3400px] w-full">
                 <ExportedImage alt="Cubicles" src={cubiclesImg} />
             </div>
