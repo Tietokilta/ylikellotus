@@ -27,10 +27,10 @@ export default function OfficeScene() {
     const hasMdBreakpoint = useBreakpoint("md");
 
     return (
-        <Scene className="relative grid place-items-center min-w-[1600px] md:min-w-[3400px]">
+        <Scene className="relative grid place-items-center min-w-[1200px] md:min-w-[2500px]">
             <div style={{
                 transform: `translateY(${scrollProgress * 0.7}px)`,
-            }} className="min-w-[1600px] md:min-w-[3400px] w-full">
+            }} className="relative scene-body">
                 <div className="grid place-items-center">
                     <ExportedImage alt="Toimisto" src={toimistoImg} className="col-start-1 row-start-1" />
                     <div className="grid col-start-1 row-start-1 !min-h-[20px] md:!min-h-[35px] !min-w-[9%] -mb-[-29.7%] ml-[1.1%]">
@@ -39,8 +39,8 @@ export default function OfficeScene() {
                 </div>
             </div>
             <div style={{
-                top: `${scrollProgress * 0.5 + (hasMdBreakpoint ? 700 : 300)}px`
-            }} className="absolute min-w-[1600px] md:min-w-[3400px] w-full">
+                top: `${scrollProgress * 0.5 + (hasMdBreakpoint ? 500 : 300)}px`
+            }} className="absolute scene-body">
                 <ExportedImage alt="Cubicles" src={cubiclesImg} />
             </div>
         </Scene>

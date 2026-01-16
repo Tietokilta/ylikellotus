@@ -40,12 +40,13 @@ export default function ComputerScene() {
 
     return (
         <Scene className="col-start-1 row-start-1">
-            <div className="relative min-w-[1200px] md:min-w-[3400px] w-full translate-x-[-50%] left-[50%] ">
+            <div className="relative scene-body-xl translate-x-[-50%] left-[50%] ">
                 <ExportedImage ref={(el) => {if (el) setYTop(el.offsetTop + el.clientTop)}}
                     alt="Computer" src={koneImg} className="w-full h-auto relative -z-10"/>
                 <div style={{
+                    /* TODO: Use top instead of marginTop */
                     marginTop: `${(scrollProgress - yTop - (hasMdBreakpoint ? 2000 : 0)) * -0.2}px`
-                }} className="min-w-[1600px] md:min-w-[3400px] w-auto h-auto relative -z-20">
+                }} className="scene-body w-auto h-auto relative -z-20">
                     <ExportedImage alt="Under Table" src={poydanalusImg} />
                 </div>
                 <div className="absolute left-[37.2%] top-[4%] w-[26%] h-[25.6%] border-black border-2" data-balloon-spawnable="false">
