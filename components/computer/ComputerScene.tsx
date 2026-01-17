@@ -23,8 +23,7 @@ export default function ComputerScene() {
 
     const [scrollProgress, setScrollProgress] = useState(0);
     const onScroll = () => {
-        const position = window.pageYOffset;
-        setScrollProgress(position);
+        setScrollProgress(window.pageYOffset);
     };
 
     useEffect(() => {
@@ -45,7 +44,7 @@ export default function ComputerScene() {
                     alt="Computer" src={koneImg} className="w-full h-auto relative -z-10"/>
                 <div style={{
                     /* TODO: Use top instead of marginTop */
-                    marginTop: `${(scrollProgress - yTop - (hasMdBreakpoint ? 2000 : 0)) * -0.2}px`
+                    marginTop: `calc(${(scrollProgress - yTop) * -0.2}px + ${hasMdBreakpoint ? 12 : 7}%)`
                 }} className="scene-body w-auto h-auto relative -z-20">
                     <ExportedImage alt="Under Table" src={poydanalusImg} />
                 </div>
