@@ -30,10 +30,10 @@ export default function OfficeScene() {
         <Scene className="relative grid place-items-center min-w-[1200px] md:min-w-[2500px]">
             <div style={{
                 transform: `translateY(${scrollProgress * 0.7}px)`,
-            }} className="relative scene-body">
+            }} className="will-change-transform relative scene-body">
                 <div className="grid place-items-center">
                     <ExportedImage alt="Toimisto" src={toimistoImg} className="col-start-1 row-start-1" />
-                    <div className="grid col-start-1 row-start-1 !min-h-[20px] md:!min-h-[35px] !min-w-[9%] -mb-[-29.7%] ml-[1.1%]">
+                    <div className="grid col-start-1 row-start-1 !min-h-[0.85em] md:!min-h-[1.7em] !min-w-[9%] -mb-[-29.8%] ml-[1.1%]">
                         <Countdown targetDate={START_DATE} />
                     </div>
                 </div>
