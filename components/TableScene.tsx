@@ -17,7 +17,9 @@ export default function TableScene() {
                         Servin mökkiin Otaniemeen tänä helmikuun yhdentenätoista päivänä vuotta 2026.
                         Saavuttehan paikalle viimeistään klo 20.00.
                         <br/><br/>
-                        Lippu: Saatavilla <a className="text-blue-600 inline-block -m-2 p-2" href={KIDE_URL}>Kide.app</a>-sivulta.<br/>
+                        {typeof KIDE_URL !== 'undefined'
+						  ? <>Lippu: Saatavilla <a className="text-blue-600 inline-block -m-2 p-2" href={KIDE_URL}>Kide.app</a>-sivulta.<br/></>
+						  : <>Lippu saatavilla pian!<br/><br/></>}
                         Teema: Byrokratia<br/>
                         Pukukoodi: Haalarit ja Business Casual<br/>
                         Paikka: Servin mökki, Otaniemi, Espoo.<br/>
