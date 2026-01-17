@@ -40,16 +40,12 @@ export default function ComputerScene() {
     return (
         <Scene className="col-start-1 row-start-1">
             <div className="relative scene-body-xl translate-x-[-50%] left-[50%] ">
-                <ExportedImage ref={(el) => {if (el) setYTop(el.offsetTop + el.clientTop)}}
-                    alt="Computer" src={koneImg} className="w-full h-auto relative -z-10"/>
-                <div style={{
-                    /* TODO: Use top instead of marginTop */
-                    marginTop: `calc(${(scrollProgress - yTop) * -0.2}px + ${hasMdBreakpoint ? 12 : 7}%)`
-                }} className="scene-body w-auto h-auto relative -z-20">
-                    <ExportedImage alt="Under Table" src={poydanalusImg} />
-                </div>
-                <div className="absolute left-[37.2%] top-[4%] w-[26%] h-[25.6%] border-black border-2" data-balloon-spawnable="false">
-                    {React.createElement(windowIndex[computerWindow])}
+                <div className="@container relative grid place-items-center">
+                    <ExportedImage ref={(el) => {if (el) setYTop(el.offsetTop + el.clientTop)}}
+                        alt="Computer" src={koneImg} className="w-full h-auto relative -z-10"/>
+                    <div className="absolute left-[37.3%] top-[6.5%] w-[25.7%] h-[40.9%]" data-balloon-spawnable="false">
+                        {React.createElement(windowIndex[computerWindow])}
+                    </div>
                 </div>
                 <div
                     title="Katso mainosvideo" data-balloon-spawnable="false"
@@ -75,6 +71,12 @@ export default function ComputerScene() {
                     href="/exe-instructions" target="_blank">
                         <p className="text-[40%] lg:text-[70%] text-center font-bold -m-2 p-2">VIP-ticket?</p>
                 </a>
+                <div style={{
+                    /* TODO: Use top instead of marginTop */
+                    marginTop: `calc(${(scrollProgress - yTop) * -0.2}px + ${hasMdBreakpoint ? 12 : 7}%)`
+                }} className="scene-body w-auto h-auto relative -z-20">
+                    <ExportedImage alt="Under Table" src={poydanalusImg} />
+                </div>
             </div>
         </Scene>
     )
