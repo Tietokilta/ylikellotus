@@ -6,7 +6,10 @@ class WindowSize {
 }
 
 export default function useWindowSize() {
-    const [size, setSize] = useState({ width: window?.innerWidth || 0, height: window?.innerHeight || 0 } as WindowSize);
+    const [size, setSize] = useState(
+        typeof window !== undefined
+          ? { width: window.innerWidth, height: window.innerHeight } as WindowSize
+          : { width: 0, height: 0 } as WindowSize);
     useEffect(() => {
         const listener = () => setSize({width: window.innerWidth, height: window.innerHeight} as WindowSize);
         window.addEventListener('resize', listener);
