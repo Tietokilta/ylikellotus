@@ -7,7 +7,7 @@ class WindowSize {
 
 export default function useWindowSize() {
     const [size, setSize] = useState(
-        typeof window !== undefined
+        typeof window !== 'undefined'
           ? { width: window.innerWidth, height: window.innerHeight } as WindowSize
           : { width: 0, height: 0 } as WindowSize);
     useEffect(() => {
