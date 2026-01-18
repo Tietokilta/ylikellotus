@@ -38,14 +38,14 @@ export default function ComputerScene() {
 
     const [yTop, setYTop] = useState(0);
     const hasMdBreakpoint = useBreakpoint("md");
-    const { lang: language } = useLanguage();
+    const { lang } = useLanguage();
 
     return (
         <Scene className="col-start-1 row-start-1">
             <div className="relative scene-body-xl translate-x-[-50%] left-[50%] ">
                 <div className="@container relative grid place-items-center">
                     <ExportedImage ref={(el) => {if (el) setYTop(el.offsetTop + el.clientTop)}}
-                        alt="Computer" src={language === "english" ? koneImgEnglish : koneImg} className="w-full h-auto relative -z-10"/>
+                        alt="Computer" src={lang === "english" ? koneImgEnglish : koneImg} className="w-full h-auto relative -z-10"/>
                     <div className="absolute left-[37.3%] top-[6.5%] w-[25.7%] h-[40.9%]" data-balloon-spawnable="false">
                         {React.createElement(windowIndex[computerWindow])}
                     </div>
@@ -68,7 +68,7 @@ export default function ComputerScene() {
                 <a
                     title="Osta VIP-lippu" data-balloon-spawnable="false"
                     className="absolute left-[53.75%] top-[2.5%] w-[6%] h-[2.5%] translate-y-[-15%] cursor-pointer flex flex-col justify-center"
-                    href={`/exe-instructions${language === "english" ? "#english" : ""}`} target="_blank">
+                    href={`/exe-instructions${lang === "english" ? "#english" : ""}`} target="_blank">
                 </a>
                 <div style={{
                     /* TODO: Use top instead of marginTop */
