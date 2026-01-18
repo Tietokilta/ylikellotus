@@ -6,7 +6,7 @@ import AdPlayer from "@/components/computer/windows/AdPlayer";
 import GameOne from "@/components/computer/windows/GameOne";
 import GameTwo from "@/components/computer/windows/GameTwo";
 import ExportedImage from 'next-image-export-optimizer'
-import koneImg from '@/public/assets/wide/kone.png'
+import koneImg from '@/public/assets/wide/koneF2.png'
 import poydanalusImg from '@/public/assets/wide/pöydänalus.png'
 import useBreakpoint from "@/components/hooks/breakpoint";
 
@@ -51,25 +51,21 @@ export default function ComputerScene() {
                     title="Katso mainosvideo" data-balloon-spawnable="false"
                     className="absolute left-[37.25%] top-[2.5%] w-[5.5%] h-[2%] translate-y-[-15%] cursor-pointer flex flex-col justify-center"
                     onClick={() => setComputerWindow("AdPlayer")}>
-                        <p className="text-[40%] lg:text-[70%] text-center font-bold -m-2 p-2">RatTube</p>
                 </div>
                 <div
                     title="Pelaa peliä" data-balloon-spawnable="false"
                     className="absolute left-[42.75%] top-[2.5%] w-[5.5%] h-[2%] translate-y-[-15%] cursor-pointer flex flex-col justify-center"
                     onClick={() => setComputerWindow("GameOne")}>
-                        <p className="text-[40%] lg:text-[70%] text-center font-bold -m-2 p-2">Game 1</p>
                 </div>
                 <div
                     title="Pelaa toista peliä" data-balloon-spawnable="false"
                     className="absolute left-[48.25%] top-[2.5%] w-[5.5%] h-[2%] translate-y-[-15%] cursor-pointer flex flex-col justify-center"
                     onClick={() => setComputerWindow("GameTwo")}>
-                        <p className="text-[40%] lg:text-[70%] text-center font-bold -m-2 p-2">Game 2</p>
                 </div>
                 <a
                     title="Osta VIP-lippu" data-balloon-spawnable="false"
                     className="absolute left-[53.75%] top-[2.5%] w-[5.5%] h-[2%] translate-y-[-15%] cursor-pointer flex flex-col justify-center"
                     href="/exe-instructions" target="_blank">
-                        <p className="text-[40%] lg:text-[70%] text-center font-bold -m-2 p-2">VIP-ticket?</p>
                 </a>
                 <div style={{
                     /* TODO: Use top instead of marginTop */
