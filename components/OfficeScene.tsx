@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Scene } from "./Scene";
+import {useEffect, useRef} from "react";
+import {Scene} from "./Scene";
 import Countdown from "@/components/Countdown";
 import {START_DATE} from "@/app/constants";
 import ExportedImage from 'next-image-export-optimizer'
@@ -10,27 +10,30 @@ import cubiclesImg from '@/public/assets/wide/cubicles.png'
 import useBreakpoint from "@/components/hooks/breakpoint";
 
 export default function OfficeScene() {
-    const [scrollProgress, setScrollProgress] = useState(0);
-    const onScroll = () => {
+    const hasMdBreakpoint = useBreakpoint("md");
+
+    // bypass react here for performance reasons
+    const officeRef = useRef<HTMLDivElement>(null);
+    const cubicleRef = useRef<HTMLDivElement>(null);
+    const createScrollListener = (mdBreakpointSnapshot: boolean) => () => {
         const position = window.pageYOffset;
-        setScrollProgress(position);
+        if (officeRef.current) officeRef.current.style.transform = `translateY(${position * 0.7}px)`;
+        if (cubicleRef.current) cubicleRef.current.style.top = `${position * 0.5 + (mdBreakpointSnapshot ? 500 : 300)}px`
     };
 
     useEffect(() => {
-        window.addEventListener("scroll", onScroll, { passive: true });
+        // called whenever we pass the md breakpoint threshold (for example, because of resize)
+        const listener = createScrollListener(hasMdBreakpoint);
+        window.addEventListener("scroll", listener, { passive: true });
 
         return () => {
-            window.removeEventListener("scroll", onScroll);
+            window.removeEventListener("scroll", listener);
         };
-    }, []);
-
-    const hasMdBreakpoint = useBreakpoint("md");
+    }, [hasMdBreakpoint]);
 
     return (
         <Scene className="relative grid place-items-center min-w-[1200px] md:min-w-[2500px]">
-            <div style={{
-                transform: `translateY(${scrollProgress * 0.7}px)`,
-            }} className="will-change-transform relative scene-body">
+            <div ref={officeRef} className="will-change-transform relative scene-body">
                 <div className="grid place-items-center">
                     <ExportedImage alt="Toimisto" src={toimistoImg} className="col-start-1 row-start-1" />
                     <div className="grid col-start-1 row-start-1 !min-h-[0.85em] md:!min-h-[1.7em] !min-w-[9%] -mb-[-29.8%] ml-[1.1%]">
@@ -38,9 +41,7 @@ export default function OfficeScene() {
                     </div>
                 </div>
             </div>
-            <div style={{
-                top: `${scrollProgress * 0.5 + (hasMdBreakpoint ? 500 : 300)}px`
-            }} className="absolute scene-body">
+            <div ref={cubicleRef} className="absolute scene-body top-[300px] md:top-[500px]">
                 <ExportedImage alt="Cubicles" src={cubiclesImg} />
             </div>
         </Scene>
